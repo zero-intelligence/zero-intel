@@ -74,11 +74,11 @@ None of these files are labeled critical. All are load-bearing walls with no sig
 
 ```mermaid
 graph RL
-    FAIL[Total Engine Failure] <- CORE[<kbd>runner.go</kbd>]
-    CORE <- DIAL[<kbd>dialers.go</kbd> / Untested]
-    CORE <- TEST[<kbd>http.go</kbd> / 0% Coverage]
-    SILENT[Silent False Negatives] <- FILT[<kbd>path_filter.go</kbd>]
-    FILT <- CORE
+    CORE["runner.go"] --> FAIL["Total Engine Failure"]
+    DIAL["dialers.go / Untested"] --> CORE
+    TEST["http.go / 0% Coverage"] --> CORE
+    FILT["path_filter.go"] --> SILENT["Silent False Negatives"]
+    CORE --> FILT
 ```
 
 ## III. THE GHOST ARCHITECTURE AND THE 61 DEPARTURES
