@@ -37,11 +37,11 @@ Ranked by strategic value, architectural complexity, and the gap between reputat
 
 | Repo | Stars | Report |
 |------|-------|--------|
-| [projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei) | 59,500 | [→ reports/security/nuclei.md](reports/security/nuclei.md) |
-| [rapid7/metasploit-framework](https://github.com/rapid7/metasploit-framework) | 59,000 | [→ reports/security/metasploit-framework.md](reports/security/metasploit-framework.md) |
-| [nmap/nmap](https://github.com/nmap/nmap) | 58,500 | [→ reports/security/nmap.md](reports/security/nmap.md) |
-| [sqlmapproject/sqlmap](https://github.com/sqlmapproject/sqlmap) | 58,000 | [→ reports/security/sqlmap.md](reports/security/sqlmap.md) |
-| [NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra) | 51,000 | [→ reports/security/ghidra.md](reports/security/ghidra.md) |
+| [projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei) | 27,725 | [→ reports/security/nuclei.md](reports/security/nuclei.md) |
+| [rapid7/metasploit-framework](https://github.com/rapid7/metasploit-framework) | 37,835 | [→ reports/security/metasploit-framework.md](reports/security/metasploit-framework.md) |
+| [nmap/nmap](https://github.com/nmap/nmap) | 12,636 | [→ reports/security/nmap.md](reports/security/nmap.md) |
+| [sqlmapproject/sqlmap](https://github.com/sqlmapproject/sqlmap) | 36,985 | [→ reports/security/sqlmap.md](reports/security/sqlmap.md) |
+| [NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra) | 66,563 | [→ reports/security/ghidra.md](reports/security/ghidra.md) |
 
 ### AI / ML Infrastructure
 
@@ -49,11 +49,11 @@ Ranked by strategic value, architectural complexity, and the gap between reputat
 
 | Repo | Stars | Report |
 |------|-------|--------|
-| [pytorch/pytorch](https://github.com/pytorch/pytorch) | 49,500 | [→ reports/ai-ml/pytorch.md](reports/ai-ml/pytorch.md) |
-| [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow) | 49,000 | [→ reports/ai-ml/tensorflow.md](reports/ai-ml/tensorflow.md) |
-| [huggingface/transformers](https://github.com/huggingface/transformers) | 48,500 | [→ reports/ai-ml/transformers.md](reports/ai-ml/transformers.md) |
-| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 41,500 | [→ reports/ai-ml/langchain.md](reports/ai-ml/langchain.md) |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 42,000 | [→ reports/ai-ml/vllm.md](reports/ai-ml/vllm.md) |
+| [pytorch/pytorch](https://github.com/pytorch/pytorch) | 98,800 | [→ reports/ai-ml/pytorch.md](reports/ai-ml/pytorch.md) |
+| [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow) | 194,457 | [→ reports/ai-ml/tensorflow.md](reports/ai-ml/tensorflow.md) |
+| [huggingface/transformers](https://github.com/huggingface/transformers) | 158,691 | [→ reports/ai-ml/transformers.md](reports/ai-ml/transformers.md) |
+| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 132,000 | [→ reports/ai-ml/langchain.md](reports/ai-ml/langchain.md) |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | 75,004 | [→ reports/ai-ml/vllm.md](reports/ai-ml/vllm.md) |
 
 ### Infrastructure
 
@@ -61,10 +61,10 @@ Ranked by strategic value, architectural complexity, and the gap between reputat
 
 | Repo | Stars | Report |
 |------|-------|--------|
-| [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) | 29,500 | [→ reports/infrastructure/kubernetes.md](reports/infrastructure/kubernetes.md) |
-| [hashicorp/terraform](https://github.com/hashicorp/terraform) | 28,500 | [→ reports/infrastructure/terraform.md](reports/infrastructure/terraform.md) |
-| [grafana/grafana](https://github.com/grafana/grafana) | 27,000 | [→ reports/infrastructure/grafana.md](reports/infrastructure/grafana.md) |
-| [elastic/elasticsearch](https://github.com/elastic/elasticsearch) | 26,500 | [→ reports/infrastructure/elasticsearch.md](reports/infrastructure/elasticsearch.md) |
+| [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) | 121,487 | [→ reports/infrastructure/kubernetes.md](reports/infrastructure/kubernetes.md) |
+| [hashicorp/terraform](https://github.com/hashicorp/terraform) | 48,000 | [→ reports/infrastructure/terraform.md](reports/infrastructure/terraform.md) |
+| [grafana/grafana](https://github.com/grafana/grafana) | 73,000 | [→ reports/infrastructure/grafana.md](reports/infrastructure/grafana.md) |
+| [elastic/elasticsearch](https://github.com/elastic/elasticsearch) | 76,405 | [→ reports/infrastructure/elasticsearch.md](reports/infrastructure/elasticsearch.md) |
 
 ### NPM / Web
 
@@ -72,9 +72,9 @@ Ranked by strategic value, architectural complexity, and the gap between reputat
 
 | Repo | Stars | Report |
 |------|-------|--------|
-| [facebook/react](https://github.com/facebook/react) | 39,000 | [→ reports/npm-web/react.md](reports/npm-web/react.md) |
-| [axios/axios](https://github.com/axios/axios) | 34,000 | [→ reports/npm-web/axios.md](reports/npm-web/axios.md) |
-| [vercel/next.js](https://github.com/vercel/next.js) | 18,000 | [→ reports/npm-web/nextjs.md](reports/npm-web/nextjs.md) |
+| [facebook/react](https://github.com/facebook/react) | 220,000 | [→ reports/npm-web/react.md](reports/npm-web/react.md) |
+| [axios/axios](https://github.com/axios/axios) | 105,000 | [→ reports/npm-web/axios.md](reports/npm-web/axios.md) |
+| [vercel/next.js](https://github.com/vercel/next.js) | 138,582 | [→ reports/npm-web/nextjs.md](reports/npm-web/nextjs.md) |
 
 ### Trending / AI Agents
 
@@ -82,9 +82,9 @@ Ranked by strategic value, architectural complexity, and the gap between reputat
 
 | Repo | Stars | Report |
 |------|-------|--------|
-| [ollama/ollama](https://github.com/ollama/ollama) | 13,500 | [→ reports/trending/ollama.md](reports/trending/ollama.md) |
-| [supabase/supabase](https://github.com/supabase/supabase) | 12,000 | [→ reports/trending/supabase.md](reports/trending/supabase.md) |
-| [Significant-Gravitas/AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | 14,500 | [→ reports/trending/autogpt.md](reports/trending/autogpt.md) |
+| [ollama/ollama](https://github.com/ollama/ollama) | 166,779 | [→ reports/trending/ollama.md](reports/trending/ollama.md) |
+| [supabase/supabase](https://github.com/supabase/supabase) | 100,075 | [→ reports/trending/supabase.md](reports/trending/supabase.md) |
+| [Significant-Gravitas/AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | 183,064 | [→ reports/trending/autogpt.md](reports/trending/autogpt.md) |
 
 ---
 
