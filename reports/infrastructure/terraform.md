@@ -11,7 +11,8 @@
 
 **Terraform is not an infrastructure tool; it is a high-latency state-reconciliation engine currently suffocating under the weight of its own legacy abstractions.**
 
-*hashicorp/terraform · 41,000+ stars · Go · Scanned April 2026*
+*[hashicorp/terraform](https://github.com/hashicorp/terraform) · 48,000+ stars · Go · Scanned April 2026*
+
 
 ---
 
