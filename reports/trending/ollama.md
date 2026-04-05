@@ -11,7 +11,7 @@
 
 **Ollama is a high-performance C++ engine trapped inside a decaying Go wrapper, sustained by the muscle memory of a departing elite.**
 
-* [ollama/ollama](https://github.com/ollama/ollama) · 166,779 stars · Go/C++ · Scanned April 2026*
+*[ollama/ollama](https://github.com/ollama/ollama) · 166,779 stars · Go/C++ · Scanned April 2026*
 
 ---
 
