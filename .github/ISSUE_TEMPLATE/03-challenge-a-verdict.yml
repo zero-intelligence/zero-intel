@@ -1,0 +1,96 @@
+name: "Challenge a Verdict"
+description: "You've been analyzed. You disagree. Make your case — publicly, on the record."
+title: "[CHALLENGE] <owner/repo>"
+labels: ["challenge", "pending-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Challenge a Verdict
+
+        Every report published here is a verdict, not an accusation.
+
+        If your codebase was analyzed and you believe the findings are wrong — technically incorrect, missing context, or based on a misread of the architecture — this is the place to make your case.
+
+        **The rules:**
+
+        - This is a technical dispute, not a complaint. Bring evidence.
+        - The original findings stay on the record regardless of outcome.
+        - If your challenge holds up, we publish a correction or addendum on the same report. Publicly.
+        - If it doesn't, that exchange also becomes part of the record.
+        - We do not remove reports. The ghost does not leave.
+
+        **Why this exists:**
+
+        We are not infallible. An analysis run against a snapshot of a codebase at a point in time can miss context that only the people who built it carry. If we got something wrong, we want to know — and we want the correction to be as visible as the original finding.
+
+        The adversarial record is more credible than a one-sided one.
+
+        ---
+
+  - type: input
+    id: report_link
+    attributes:
+      label: "Link to the Report"
+      description: "Direct link to the published report you are challenging."
+      placeholder: "https://github.com/zero-intelligence/zero-intel/blob/main/reports/..."
+    validations:
+      required: true
+
+  - type: input
+    id: your_role
+    attributes:
+      label: "Your Role"
+      description: "Who are you in relation to this codebase? Helps us weight the challenge appropriately."
+      placeholder: "e.g. Lead maintainer, co-founder, core contributor since 2019"
+    validations:
+      required: true
+
+  - type: textarea
+    id: specific_finding
+    attributes:
+      label: "The Specific Finding You Are Challenging"
+      description: "Quote the exact section, sentence, or claim from the report. Do not paraphrase."
+      placeholder: |
+        e.g. "The report states: 'The session token is stored in plaintext in the Redis cache with no TTL enforcement.' This is incorrect because..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: your_case
+    attributes:
+      label: "Your Case"
+      description: "The technical argument. Code references, architecture context, git commits, documentation — anything that constitutes evidence. Assertions without evidence will not be considered."
+      placeholder: |
+        Walk us through why the finding is wrong. Include:
+        - Specific file paths and line numbers if relevant
+        - Commit hashes or PRs if the issue was already addressed
+        - Architecture decisions that explain the pattern we flagged
+        - Any documentation that contradicts the finding
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_you_want
+    attributes:
+      label: "What Outcome Are You Requesting?"
+      description: "Be specific. A correction? An addendum? A re-analysis of a specific module?"
+      placeholder: |
+        e.g. "A correction to Section 2 of the report acknowledging that the TTL is enforced at the application layer, not the cache layer."
+        e.g. "A re-analysis of the auth module using the v2.4.1 tag, not main, which was in an incomplete state at the time of the original scan."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: "Acknowledgements"
+      options:
+        - label: "I am a maintainer or authorized representative of the analyzed repository."
+          required: true
+        - label: "I understand the original report remains on the record regardless of outcome."
+          required: true
+        - label: "I understand this challenge and any response will be publicly visible."
+          required: true
+        - label: "I am disputing specific technical findings, not requesting removal of the report."
+          required: true

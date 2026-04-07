@@ -1,0 +1,121 @@
+name: "Request — Public Repo Analysis (Free)"
+description: "Submit a public GitHub repository for forensic analysis. Basic report is free."
+title: "[REQUEST] <owner/repo>"
+labels: ["analysis-request", "public", "pending-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Forensic Analysis Request
+
+        Every codebase has a confession. Most people never ask it the right question.
+
+        Submit a public repository below. **All requests are reviewed before analysis begins** — not every repo gets accepted. We prioritize submissions where the gap between reputation and substrate truth is widest.
+
+        If accepted, a basic forensic report will be published to this repository within **72 hours of approval**.
+
+        **What you get (free basic report):**
+        - Architectural verdict — one sentence, the complete payload
+        - Ghost-in-the-Commits: founding assumptions buried in git history
+        - Dependency chain risk surface
+        - Structural vulnerability patterns — not weaponized, not exploitable as-is
+
+        **What the free report does not include:**
+        - The full deep analysis (reserved for commissioned reports)
+        - Zero-day details or exploit chains — those go to verified owners only
+        - Private repo support
+        - Guaranteed acceptance
+
+        ---
+
+  - type: input
+    id: repo_url
+    attributes:
+      label: "Repository URL"
+      description: "Full GitHub URL of the public repository."
+      placeholder: "https://github.com/owner/repo"
+    validations:
+      required: true
+
+  - type: input
+    id: repo_stars
+    attributes:
+      label: "Approximate Star Count"
+      description: "Helps us prioritize the queue."
+      placeholder: "e.g. 12,000"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: primary_language
+    attributes:
+      label: "Primary Language"
+      options:
+        - TypeScript / JavaScript
+        - Python
+        - Go
+        - Rust
+        - C / C++
+        - Java / Kotlin
+        - Ruby
+        - Solidity
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Category"
+      description: "Best-fit category for the repo."
+      options:
+        - AI / ML Infrastructure
+        - AI Agents & Orchestration
+        - Security Tools
+        - Infrastructure / DevOps
+        - Web Framework / Frontend
+        - Database / Storage
+        - Blockchain / Crypto
+        - Developer Toolchain
+        - Communication / Protocol
+        - Systems / Low-Level
+        - Data & Analytics
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: why_this_repo
+    attributes:
+      label: "Why This Repo?"
+      description: "What makes you suspect this codebase has an interesting confession? High-signal submissions move faster. Vague submissions get deprioritized."
+      placeholder: |
+        e.g. "This library handles auth for half of npm's ecosystem but the maintainer hasn't committed in 8 months."
+        e.g. "The performance claims in the README don't match what I'm seeing in production."
+    validations:
+      required: true
+
+  - type: textarea
+    id: specific_hypothesis
+    attributes:
+      label: "Specific Hypothesis (optional)"
+      description: "If you have a hunch about where the ghost lives — a specific module, a specific assumption — name it. We'll either confirm or falsify it."
+      placeholder: "e.g. The connection pooling logic in /src/db/pool.ts makes assumptions about async error propagation that I think are wrong."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: "Acknowledgements"
+      options:
+        - label: "I confirm this is a public repository."
+          required: true
+        - label: "I understand all requests are reviewed and not every submission is accepted."
+          required: true
+        - label: "I understand the free report does not include exploit chains or zero-day details."
+          required: true
+        - label: "I understand delivery is within 72 hours of approval, not of submission."
+          required: true
+        - label: "I am not submitting this to harm the target repository or its maintainers."
+          required: true

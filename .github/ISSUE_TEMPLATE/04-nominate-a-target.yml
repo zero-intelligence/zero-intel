@@ -1,0 +1,77 @@
+name: "Nominate a Target"
+description: "You know a codebase that deserves the forensic lens. Name it."
+title: "[NOMINATE] <owner/repo>"
+labels: ["nomination", "pipeline"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Nominate a Target
+
+        The next 80 subjects are already mapped. But the pipeline is not closed.
+
+        If you know a codebase where the gap between reputation and substrate truth is wide — a system that half the internet trusts and nobody has actually read — nominate it here.
+
+        A nomination is not a request for analysis. It is a signal. Strong nominations with clear reasoning move to the front of the queue.
+
+        ---
+
+  - type: input
+    id: repo_url
+    attributes:
+      label: "Repository URL"
+      placeholder: "https://github.com/owner/repo"
+    validations:
+      required: true
+
+  - type: textarea
+    id: the_case
+    attributes:
+      label: "Why This Repo?"
+      description: "What makes you believe this codebase has an interesting confession? One strong reason beats five vague ones."
+      placeholder: |
+        What is the gap between what this repo claims and what you suspect is actually true?
+
+        e.g. "This library is the default HTTP client in three major frameworks. It handles redirect logic with a single comment that says 'TODO: validate'. 40M weekly downloads."
+        e.g. "The maintainer left 18 months ago. The org still has it listed as 'actively maintained'. The last security patch was in 2021."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Category"
+      options:
+        - AI / ML Infrastructure
+        - AI Agents & Orchestration
+        - Security Tools
+        - Infrastructure / DevOps
+        - Web Framework / Frontend
+        - Database / Storage
+        - Blockchain / Crypto
+        - Developer Toolchain
+        - Communication / Protocol
+        - Systems / Low-Level
+        - Data & Analytics
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: trust_surface
+    attributes:
+      label: "Trust Surface"
+      description: "How many people or systems depend on this? Downloads, dependent repos, companies known to use it — whatever signals the blast radius."
+      placeholder: "e.g. 12M weekly npm downloads, dependency of Next.js and Remix"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: "Acknowledgements"
+      options:
+        - label: "This is a public repository."
+          required: true
+        - label: "I understand this is a nomination, not a guaranteed analysis request."
+          required: true

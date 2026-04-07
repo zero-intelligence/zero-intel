@@ -1,0 +1,120 @@
+name: "Commission — Full Forensic Report ($10,000)"
+description: "Commission a full forensic analysis of your own repository. Includes zero-days, exploit chains, and the complete deep report. For verified owners only."
+title: "[COMMISSION] <owner/repo>"
+labels: ["commission", "pending-vetting"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Full Forensic Commission
+
+        The full report is not a longer version of the free report. It is a different class of instrument.
+
+        **This report includes things the free report does not:**
+        - Zero-day vulnerabilities and exploit chains — actionable, specific, reproducible
+        - Full secret archaeology — credentials, tokens, and keys buried in git history
+        - Attack path mapping — how a real adversary moves from entry to impact
+        - Complete deep analysis across every layer of the codebase
+
+        **Because of this, we only run this analysis for verified repository owners.**
+
+        We do not run full reports for third parties on repos they don't own — regardless of payment. The exploit details go to the people who can fix them, not to anyone with $10,000.
+
+        ---
+
+        ### The process
+
+        1. Submit this form
+        2. We review your request and verify ownership — **vetting happens before payment**
+        3. If approved, we respond on this issue with next steps
+        4. Payment clears → analysis begins → **delivery within 48 hours**
+        5. Your specific questions are addressed directly in the report
+
+        ---
+
+        ### Who this is for
+
+        - **Founders** — before a major launch or fundraise, know what you're actually shipping
+        - **CTOs** — architectural verdict on a codebase you inherited or acquired
+        - **CISO / Security leads** — pre-deployment sign-off on an internal or acquired system
+        - **M&A technical due diligence** — you are buying a company, get the forensic baseline before the LOI
+
+        **Price: $10,000 USD**
+
+        ---
+
+  - type: input
+    id: repo_url
+    attributes:
+      label: "Repository URL"
+      description: "The repository you want analyzed. Public or private."
+      placeholder: "https://github.com/your-org/your-repo"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: repo_visibility
+    attributes:
+      label: "Repository Visibility"
+      options:
+        - "Public"
+        - "Private"
+    validations:
+      required: true
+
+  - type: input
+    id: ownership_proof
+    attributes:
+      label: "How to Verify Your Ownership"
+      description: "How should we confirm you own or are authorized to commission this analysis? e.g. your GitHub username matches the org, you can add us as a collaborator, your company email domain matches the org name."
+      placeholder: "e.g. I am @username, the org owner. I can add you as a read-only collaborator temporarily."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: use_case
+    attributes:
+      label: "Primary Use Case"
+      options:
+        - "Pre-Launch Security Review"
+        - "M&A / Technical Due Diligence"
+        - "CISO Pre-Deployment Sign-off"
+        - "Inherited Codebase Audit"
+        - "Post-Incident Root Cause"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_you_need
+    attributes:
+      label: "What You Need to Know"
+      description: "The specific questions you want the report to answer. These will be addressed directly and included as a dedicated section in your report."
+      placeholder: |
+        e.g. "We are launching to production in 6 weeks. I need to know: (1) are there any zero-days in the auth layer, (2) what does the git history reveal about shortcuts taken under deadline pressure, (3) what is the real attack surface of the API gateway."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional Context (optional)"
+      description: "NDA requirements, specific modules to prioritize, access constraints, timeline pressure."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: "Acknowledgements"
+      options:
+        - label: "I own this repository or have explicit written authorization from the owner to commission this analysis."
+          required: true
+        - label: "I understand vetting happens before payment — we reserve the right to decline any commission."
+          required: true
+        - label: "I understand the full report includes zero-day details and exploit chains and will be delivered to me privately."
+          required: true
+        - label: "I will not share the full report contents publicly without Zero Intel's consent."
+          required: true
+        - label: "I understand delivery is within 48 hours of payment clearing."
+          required: true
