@@ -88,19 +88,73 @@ Ranked by strategic value, architectural complexity, and the gap between reputat
 
 ---
 
-## Report Anatomy <kbd>REDACTED</kbd>
+## Report Anatomy
 
-Each report opens with the verdict. One sentence. The complete payload.
+```
+ ██████╗ ██╗      █████╗ ███████╗███████╗██╗███████╗██╗███████╗██████╗
+██╔════╝ ██║     ██╔══██╗██╔════╝██╔════╝██║██╔════╝██║██╔════╝██╔══██╗
+██║      ██║     ███████║███████╗███████╗██║█████╗  ██║█████╗  ██║  ██║
+██║      ██║     ██╔══██║╚════██║╚════██║██║██╔══╝  ██║██╔══╝  ██║  ██║
+╚██████╗ ███████╗██║  ██║███████║███████║██║██║     ██║███████╗██████╔╝
+ ╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚═╝     ╚═╝╚══════╝╚═════╝
+```
+
+The report structure is not published.
+
+The methodology is not disclosed.
+
+What runs beneath the surface has been deliberately kept off the record — not to obscure the findings, but to protect the integrity of the analysis. A known instrument can be played.
+
+What we can say:
+
+```
+█████ ███████ ██████ ████████ ██ ████ ████████ ██████ ███████ ████ ██████████.
+████████ ██ ███ ████████ ████ ██████ ███████ ██████████ ████ ██████ ███ ████.
+██████ ███ ████ ███ █████████ ██████████ ████ ███████████ ████████ ████ █████.
+███ ████████ ████ ██████ ████ ███ ██████ ████████████ ████ ██████████ ███████.
+```
+
+Every report opens with the verdict. One sentence. The complete payload.
 
 Everything after it is evidence.
 
-```
-███████████ ███ ████████ █████ ███ ███████. ███ ████████. ████████ ███████████ ███████ ██ █████████.
-███████████ ███ ████████ █████ ███ ███████. ███ ████████. ████████ ███████████ ███████ ██ █████████.
-███████████ ███ ████████ █████ ███ ███████. ███ ████████. ████████ ███████████ ███████ ██ █████████.
-███████████ ███ ████████ █████ ███ ███████. ███ ████████. ████████ ███████████ ███████ ██ █████████.
-███████████ ███ ████████ █████ ███ ███████. ███ ████████. ████████ ███████████ ███████ ██ █████████.
-```
+The ghost is never in the line that fails.
+It is in the assumption that was never questioned.
+
+---
+
+> **What you are reading is approximately 1% of the full report.**
+>
+> The published version is a heavily redacted surface — architectural observations, structural patterns, and the ghost-in-the-commits made safe for public disclosure. Zero-days, exploit chains, active attack paths, and credential archaeology are withheld for security reasons and delivered exclusively to verified owners via commissioned reports.
+>
+> Reports are generated using large language models as the synthesis layer. The raw signals feeding that synthesis are not disclosed.
+>
+> The redaction is not a limitation. It is the product.
+
+---
+
+## Submit a Repo for Analysis
+
+The 20 subjects above were chosen by us. The [next 80 are already targeted](TARGETS.md).
+
+But the pipeline is not closed. If you have a target in mind — a codebase you depend on, one you're about to acquire, one you built and need an honest verdict on — submit it.
+
+| | Free | Commission |
+|--|------|------------|
+| **Repo type** | Public only | Public or private |
+| **Report depth** | Basic — verdict, git archaeology, structural vulnerabilities | Full — zero-days, exploit chains, complete attack path mapping |
+| **Who gets it** | Published here, publicly | Delivered privately to you only |
+| **Delivery** | Within 72 hours of approval | Within 48 hours of payment |
+| **Price** | Free | $10,000 USD |
+| **Vetting** | All requests reviewed — not every submission accepted | Ownership verified before payment is requested |
+
+→ **[Request a free analysis](https://github.com/zero-intelligence/zero-intel/issues/new?template=01-request-public-repo.yml)**
+
+→ **[Commission a full report ($10,000)](https://github.com/zero-intelligence/zero-intel/issues/new?template=02-request-private-repo.yml)**
+
+→ **[Nominate a target for the pipeline](https://github.com/zero-intelligence/zero-intel/issues/new?template=04-nominate-a-target.yml)**
+
+→ **[Challenge a published verdict](https://github.com/zero-intelligence/zero-intel/issues/new?template=03-challenge-a-verdict.yml)**
 
 ---
 
